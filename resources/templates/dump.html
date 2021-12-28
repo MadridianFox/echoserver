@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Echoserver</title>
+  </head>
+  <body>
+    <h3>Server</h3>
+    <ul>
+      {% for pair in server %}
+      <li>{{pair.0}}: {{pair.1}}</li>
+      {% endfor %}
+    </ul>
+
+    <h3>Client</h3>
+    <ul>
+      {% for pair in client %}
+      <li>{{pair.0}}: {{pair.1}}</li>
+      {% endfor %}
+    </ul>
+
+    <h3>Http</h3>
+    <ul>
+      {% for pair in http %}
+      <li>{{pair.0}}: {{pair.1}}</li>
+      {% endfor %}
+    </ul>
+
+    <h3>Headers</h3>
+    <ul>
+      {% for pair in headers %}
+      <li>{{pair.0}}: {{pair.1}}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

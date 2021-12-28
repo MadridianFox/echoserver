@@ -1,0 +1,19 @@
+SERVER
+
+{% for pair in server %}{{pair.0}}: {{pair.1}}
+{% endfor %}
+
+CLIENT
+
+{% for pair in client %}{{pair.0}}: {{pair.1}}
+{% endfor %}
+
+HTTP
+
+{% for pair in http %}{{pair.0}}: {{pair.1}}
+{% endfor %}
+
+HEADERS
+
+{% for pair in headers %}{{pair.0}}: {{pair.1}}
+{% endfor %}
